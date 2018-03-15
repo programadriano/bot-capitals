@@ -1,0 +1,46 @@
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Bot Application.dll.config
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Bot Application.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Bot Application.pdb
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Autofac.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Chronic.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.Bot.Builder.Autofac.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.Bot.Builder.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.Bot.Connector.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.Rest.ClientRuntime.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.WindowsAzure.Configuration.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Newtonsoft.Json.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\System.IdentityModel.Tokens.Jwt.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\System.Net.Http.Formatting.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\System.Web.Http.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\System.Web.Http.WebHost.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Autofac.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.Bot.Builder.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.Bot.Builder.Autofac.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.Bot.Connector.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Microsoft.WindowsAzure.Configuration.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\Newtonsoft.Json.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\System.IdentityModel.Tokens.Jwt.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\System.Net.Http.Formatting.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\System.Web.Http.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\System.Web.Http.WebHost.xml
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\ar\Microsoft.Bot.Builder.resources.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\cs\Microsoft.Bot.Builder.resources.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\en\Microsoft.Bot.Builder.resources.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\es\Microsoft.Bot.Builder.resources.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\fa\Microsoft.Bot.Builder.resources.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\fr\Microsoft.Bot.Builder.resources.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\ja\Microsoft.Bot.Builder.resources.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\ru\Microsoft.Bot.Builder.resources.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\obj\Release\Joaozinho.csproj.CoreCompileInputs.cache
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\obj\Release\Bot Application.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\obj\Release\Bot Application.pdb
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\obj\Release\Joaozinho.csprojResolveAssemblyReference.cache
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\libmp3lame.32.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\libmp3lame.64.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\NAudio.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\NAudio.Lame.dll
+c:\users\tadriano\source\repos\BotSpeak\Joaozinho\bin\NAudio.xml
