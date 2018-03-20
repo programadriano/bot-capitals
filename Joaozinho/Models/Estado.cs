@@ -8,8 +8,13 @@ namespace Joaozinho.Models
     public class Estado
     {
 
-        private Estado()
+        private string Nome { get; set; }
+        private string Capital { get; set; }
+        private static IList<Estado> _estados { get; set; }
+
+        public static string VerificarCapital(string estado)
         {
+            #region [Estados]          
             _estados = new List<Estado>
             {
                 new Estado
@@ -148,14 +153,11 @@ namespace Joaozinho.Models
                     Capital = "Palmas"
                 }
             };
-        }
-        private string Nome { get; set; }
-        private string Capital { get; set; }
-        private static IList<Estado> _estados { get; set; }
+            #endregion
 
-        public static string VerificarCapital(string estado)
-        {
-            return _estados.FirstOrDefault(x => x.Nome == estado).Capital;
+            var c = _estados.FirstOrDefault(x => x.Nome == estado);
+
+            return c.Capital;
         }
     }
 }

@@ -7,6 +7,9 @@ using System.IO;
 using System.Web;
 using NAudio.Lame;
 using NAudio.Wave;
+using System.Diagnostics;
+using System.Text.RegularExpressions;
+using Joaozinho.Models;
 
 namespace Joaozinho.Dialogs
 {
@@ -24,54 +27,37 @@ namespace Joaozinho.Dialogs
         {
             var activity = await result as Activity;
 
-            using (SpeechSynthesizer reader = new SpeechSynthesizer())
+            var capital = Estado.VerificarCapital(activity.Text);
+
+            if (!String.IsNullOrEmpty(capital))
             {
-                //set some settings
-                reader.Volume = 100;
-                reader.Rate = 0; //medium
+                var reply = activity.CreateReply();
 
-                //save to memory stream
-                MemoryStream ms = new MemoryStream();
-                reader.SetOutputToWaveStream(ms);
+                Attachment attachment = new Attachment();
+                attachment.ContentType = "audio/mpeg3";
+                attachment.ContentUrl = @"http://localhost:3979/audios/" + RemoveSpecialChars(capital) + ".mp3";
+                attachment.Name = "A capital de " + activity.Text + " é ";
+                reply.Attachments.Add(attachment);
+                await context.PostAsync(reply);
 
-                PromptBuilder builder = new PromptBuilder();
-                builder.AppendText("This sample asynchronously speaks a prompt to a WAVE file.");
-                reader.Speak(builder);
-
-                //now convert to mp3 using LameEncoder or shell out to audiograbber
-                var path = HttpContext.Current.Server.MapPath("/audios/");
-                ConvertWavStreamToMp3File(ref ms, path + Guid.NewGuid() + ".mp3");
+            }
+            else
+            {
+                await context.PostAsync("Nenhuma capital encontrada para: " + activity.Text);
             }
 
-            var reply = activity.CreateReply();
 
-            Attachment attachment = new Attachment();
-            attachment.ContentType = "audio/mpeg3";
-            attachment.ContentUrl = @"C:\Logs\bot.mp3";
-            attachment.Name = "Testing the Bot Framework Mp3";
-
-            reply.Attachments.Add(attachment);
-
-
-            await context.PostAsync("teste");
             context.Wait(MessageReceivedAsync);
+
+
         }
 
-        public static void ConvertWavStreamToMp3File(ref MemoryStream ms, string savetofilename)
+        public static string RemoveSpecialChars(string input)
         {
-            //rewind to beginning of stream
-            ms.Seek(0, SeekOrigin.Begin);
-
-            using (var retMs = new MemoryStream())
-            using (var rdr = new WaveFileReader(ms))
-            using (var wtr = new LameMP3FileWriter(savetofilename, rdr.WaveFormat, LAMEPreset.VBR_90))
-            {
-                rdr.CopyTo(wtr);
-            }
+            return Regex.Replace(input, @"[^0-9a-zA-Z\._]", string.Empty);
         }
-
 
     }
 
-   
+
 }
